@@ -12,8 +12,8 @@ If you haven't set up pre-commit, check out [pre-commit's installation docs](htt
 Add the following to your `.pre-commit-config.yaml`:
 
 ```
--   repo: git://github.com/noahsark769/xcodeproj-sort-pre-commit-hook
-    sha: v1.1.1
+-   repo: https://github.com/stationhead/xcodeproj-sort-pre-commit-hook.git
+    rev: v1.1.1
     hooks:
     - id: xcodeproj-sort
       args: [--groups-position=above]
@@ -44,11 +44,6 @@ Then, run the gem with the project file as an argument:
 ```
 xcodeproj-sort MyProject.xcodeproj/project.pbxproj
 ```
-
-## Contributing
-I use this in the development of [Trestle](https://itunes.apple.com/us/app/trestle-the-new-sudoku/id1300230302?mt=8) and [CIFilter.io](https://itunes.apple.com/us/app/cifilter-io/id1457458557?mt=8), but your mileage might vary. If you notice a bug or have a feature request, please open a github issue or submit a pull request. It's best to open issues first so that work isn't duplicated.
-
-Also, feel free to reach out [on Twitter](https://twitter.com/noahsark769) if you have any questions.
 
 ## Development
 After closing the repo, you can run `make install` to build the gem and install locally, after which `xcodeproj-sort` should be in your path.
